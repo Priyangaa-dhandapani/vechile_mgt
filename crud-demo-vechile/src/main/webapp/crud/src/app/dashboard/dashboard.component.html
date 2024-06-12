@@ -64,17 +64,18 @@
         <h6 class="subHeadFont boldClass"> Vehicles List </h6>
     </div>
 
-    <!-- <div class="row">
-        <div class="col-5">
+   
+    <div class="row">
+        <div class="col-4">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
                     <mat-icon aria-hidden="false" aria-label="Example search icon" fontIcon="search">
                     </mat-icon>
                 </span>
                 <input type="text" class="form-control" placeholder="search" aria-label="search"
-                    aria-describedby="basic-addon1" (input)="searchText($event)">
+                    aria-describedby="basic-addon1" (input)="searchText($event)" (keyup)="applyFilter($event)" #input>
 
-                <div class="btn-group">
+                <!-- <div class="btn-group">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         {{DropValue}}
@@ -84,7 +85,7 @@
                             <a class="dropdown-item"  href="#" value='dropSelectValue'>{{item.desc}}</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
 
             </div>
@@ -92,7 +93,8 @@
 
         <div class="col-6"></div>
 
-    </div> -->
+    </div> 
+
 
 
     <div class="row mat-elevation-z8">
