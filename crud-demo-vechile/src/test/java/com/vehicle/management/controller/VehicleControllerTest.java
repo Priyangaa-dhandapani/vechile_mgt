@@ -32,7 +32,7 @@ public class VehicleControllerTest {
 
     @BeforeEach
     void createVehicle() {
-        vehicle = new Vehicle("Mohan", "Toyota", "Supra", "2009", "QWERTY1232");
+        vehicle = new Vehicle("priyanga", "Toyota", "Supra", "2009", "QWERTY1232");
         vehicleRepo.save(vehicle);
     }
 
