@@ -95,6 +95,11 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.dashBoardform.get('model')?.setValue(selectElem.model);
     this.dashBoardform.get('id')?.setValue(selectElem.id);
   }
+  
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
   handleDelete(selectElem: any) {
     console.log(selectElem, "dele");
@@ -109,6 +114,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   handleSearch() {
 
   }
+
+
 
 }
 
